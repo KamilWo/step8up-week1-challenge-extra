@@ -1,0 +1,145 @@
+@import url('./partials/_variables.css');
+
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+}
+
+/* Element selectors */
+
+/* Navigation */
+nav {
+  background-color: var(--color-surface-dark);
+  color: var(--color-text-on-dark);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav .logo {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  height: 30px;
+}
+
+nav .nav-links a {
+  color: var(--color-text-on-dark);
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-surface-dark);
+  color: var(--color-text-on-dark);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+#contact {
+  background-color: var(--color-background-secondary);
+  width: 70%;
+}
+
+h1,
+h2 {
+  color: var(--color-accent);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+input,
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button,
+button[type="submit"] {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+section {
+  display: block;
+  padding: 20px;
+  margin: auto auto 40px;
+  width: 90%
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+}
+
+.intro-text {
+  width: 50%;
+  padding: 20px;
+}
+
+.intro-image {
+  width: 50%;
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media screen and (width <= 768px) {
+  #contact {
+    width: 90%;
+  }
+  nav .logo {
+    height: 40px;
+  }
+
+  .intro-section {
+    flex-direction: column;
+  }
+
+  .intro-image,
+  .intro-text {
+    width: 100%;
+  }
+}
