@@ -1,0 +1,25 @@
+/* Color Scheme */
+:root {
+  --color-background-primary: white;
+  --color-background-secondary: #949b9f48;
+  --color-surface-dark: #333;
+  --color-text-primary: #222;
+  --color-text-on-dark: white;
+  --color-accent: #007acc;
+  --color-border: #ccc;
+  --color-input-bg: white;
+  --color-input-text: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background-primary: #222;
+    --color-background-secondary: #444;
+    --color-surface-dark: #111;
+    --color-text-primary: #eee;
+    --color-text-on-dark: #eee;
+    --color-border: #555;
+    --color-input-bg: #333;
+    --color-input-text: #eee;
+  }
+}

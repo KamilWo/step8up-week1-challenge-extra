@@ -1,22 +1,27 @@
 {
   "name": "step8up-week1-challenge-extra",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Week1 challenge-extra website, created as part of the Step8Up bootcamp!",
   "private": "true",
   "scripts": {
+    "dev": "nodemon src/index.html",
     "prebuild": "npm run validate && rimraf ./public",
     "build": "parcel build src/index.html --dist-dir ./public --public-url /step8up-week1-challenge-extra/",
-    "start": "rimraf ./dist && parcel src/index.html",
+    "start": "rimraf ./dist && parcel src/*.html --dist-dir ./public",
     "validate": "npx stylelint src/assets/**/*.css; npx html-validate src/**/*.html"
   },
   "keywords": [
-    "Simple website",
-    "Challenge extra"
+    "Simple",
+    "HTML website",
+    "Challenge extra",
+    "Step8Up",
+    "bootcamp"
   ],
   "author": "Kamil Wozniak <kamil.m.wozniak+git@gmail.com",
   "license": "GPLv3",
   "devDependencies": {
     "html-validator": "^5.1.18",
+    "nodemon": "^3.1.10",
     "parcel": "^2.15.2",
     "rimraf": "^6.0.1",
     "stylelint": "^16.20.0",
